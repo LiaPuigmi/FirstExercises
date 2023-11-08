@@ -9,6 +9,9 @@ public class Program1 {
 
 		Ejercicios1 ej1= new Ejercicios1();
 		Navidad ej2=new Navidad();
+		EstructurasRepetitivas ej3=new EstructurasRepetitivas();
+		Banderas ej4=new Banderas();
+		
 	// HACER MENU EJERCICIOS:
 	//	ej1.secuenciasEscape();
 	//	ej1.estoEsUnMain();
@@ -126,9 +129,75 @@ public class Program1 {
 		double number=55;
 		System.out.print(number>0?"¡Es positivo!":number<0?"¡Es negativo!":"¡Es cero, na de ná!"); */
 		
-		ej2.ArbolDeNavidad();
+		// ej2.ArbolDeNavidad();
 	
+		// int num= ej1.imputUserIntBetween("Escribe un numero entre 1 y 100 y te mostraré los divisibles por 2:", 1, 100);
+		// ej3.divisiblesPorDos(num); 
+		//int[] numeros= {3,5,6,9,12,13,22,33};
+		//ej3.divisiblesPorTresFor(numeros);
+		//ej3.divisiblesPorTresWhile(numeros);
 		
+		//int num= ej1.imputUserIntBetween("Escribe un numero entre 0 y 10 y te saludaré esas veces:", 0, 10);
+		//String[] saludar= {"Buenaas!", "Buenos dias", "Hello!", "Holaaa", "Guenaaas!", "Dias, porque buenos lo seran pa ti", "Saludos cordiales", "Que pasa nen!", "Saludos terricolas"};
+		//ej3.saludosFor(num, saludar);
+		//ej3.saludosWhile(num, saludar);
+		//ej3.saludosDoWhile(num, saludar);
+
+		
+		// ej3.abecedarioLoco();
+		
+		//ej3.saltandoFor();
+		//ej3.saltandoWhile();
+		//ej3.saltandoEnBucle();
+		
+		//System.out.println(ej3.javaOrNull(null));
+		//System.out.println(ej3.javaOrNull("Klok"));
+		//System.out.println(ej3.javaOrNull("java"));
+		
+		//System.out.println(ej3.login("admin","1234"));
+		//System.out.println(ej3.login("admin","4567"));
+		//System.out.println(ej3.login("root","1234"));
+		//System.out.println(ej3.login("root","4567"));
+		
+		// System.out.println(ej3.isPar());
+		
+		final String RESET="\033[0m";
+		final String RED_BG = "\033[48;5;160m";
+		final String RED_TEXT= "\033[38;5;160m";
+		final String BLUE_BG = "\033[48;5;33m";
+		final String BLUE_TEXT= "\033[38;5;33m";
+		final String BLACK_BG="\033[48;5;16m";
+		final String BLACK_TEXT="\033[38;5;16m";
+		final String GREEN_BG="\033[48;5;46m";
+		final String GREEN_TEXT="\033[38;5;46m";
+		final String YELLOW_BG="\033[48;5;226m";
+		final String YELLOW_TEXT="\033[38;5;226m";
+		final String WHITE_BG="\033[48;5;255m";
+		final String WHITE_TEXT="\033[38;5;255m";
+		final String BOLD="\033[1m";
+		final String FAINT="\033[2m";
+		final String ITALIC="\033[3m";
+		final String UNDERLINED="\033[4m";
+		final String INVERSE="\033[7m";
+		final String STRIKETHROUGH="\033[9m";
+
+		String[] coloresEspanya= {RED_BG, YELLOW_BG, RED_BG};
+		String[] coloresAlemania= {BLACK_BG, RED_BG, YELLOW_BG};
+		String[] coloresUcraina= {BLUE_BG, YELLOW_BG};
+		String[] coloresCatalunya= {YELLOW_BG, RED_BG,YELLOW_BG, RED_BG,YELLOW_BG, RED_BG,YELLOW_BG, RED_BG,YELLOW_BG};
+		String[] coloresFrancia= {BLUE_BG,WHITE_BG,RED_BG};
+		String [] coloresGrecia= {BLUE_BG,WHITE_BG,BLUE_BG,WHITE_BG,BLUE_BG,WHITE_BG,BLUE_BG,WHITE_BG,BLUE_BG};
+		ej4.verticalSameColor(9, 1, 30, 3, coloresEspanya, false, RESET);
+		ej4.verticalSameColor(9, 1, 30, 3, coloresAlemania, false, RESET);
+		ej4.verticalSameColor(8, 1, 30, 2, coloresUcraina, false, RESET);
+		ej4.verticalSameColor(9, 1, 30, 9, coloresCatalunya, false, RESET);
+		ej4.verticalSameColor(9, 3, 10, 3, coloresFrancia, true, RESET);
+		ej4.verticalSameColor(9, 1, 30, 9, coloresGrecia, false, RESET);
+		
+		ej4.hacerBandera();
+		
+
+
 	}
 
 
