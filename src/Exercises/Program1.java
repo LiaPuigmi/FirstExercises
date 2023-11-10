@@ -1,3 +1,4 @@
+package Exercises;
 import java.util.Random;
 
 public class Program1 {
@@ -167,6 +168,8 @@ public class Program1 {
 		final String BLUE_BG = "\033[48;5;33m";
 		final String BLUE_TEXT= "\033[38;5;33m";
 		final String BLACK_BG="\033[48;5;16m";
+		final String BROWN_BG="\033[48;5;88m";
+		final String GREENLIGHT_BG="\033[48;5;78m";
 		final String BLACK_TEXT="\033[38;5;16m";
 		final String GREEN_BG="\033[48;5;46m";
 		final String GREEN_TEXT="\033[38;5;46m";
@@ -180,24 +183,112 @@ public class Program1 {
 		final String UNDERLINED="\033[4m";
 		final String INVERSE="\033[7m";
 		final String STRIKETHROUGH="\033[9m";
+		   
+		String[] backgroundColors= {RED_BG,BLACK_BG,BLUE_BG,GREEN_BG,YELLOW_BG,WHITE_BG};
+		String[] textColors= {RED_TEXT,BLACK_TEXT,BLUE_TEXT,GREEN_TEXT,YELLOW_TEXT,WHITE_TEXT};
+		String[] formatColors= {BOLD,FAINT,ITALIC,UNDERLINED,STRIKETHROUGH};
+		String[] frases= {
+				"  Felicidad en cada amanecer  ",
+				"  La belleza de un atardecer  ",
+				"   El canto de los pajaros    ",
+				"   El aroma de las flores     ",
+				"     La risa de un niño       ",
+				"     El abrazo de un amigo    ",
+				"   El amor en cada mirada     ",
+				"  La paz en la naturaleza     ",
+				"   El susurro del viento      ",
+				"   El brillo de las estrellas "};
 
-		String[] coloresEspanya= {RED_BG, YELLOW_BG, RED_BG};
-		String[] coloresAlemania= {BLACK_BG, RED_BG, YELLOW_BG};
-		String[] coloresUcraina= {BLUE_BG, YELLOW_BG};
-		String[] coloresCatalunya= {YELLOW_BG, RED_BG,YELLOW_BG, RED_BG,YELLOW_BG, RED_BG,YELLOW_BG, RED_BG,YELLOW_BG};
-		String[] coloresFrancia= {BLUE_BG,WHITE_BG,RED_BG};
-		String [] coloresGrecia= {BLUE_BG,WHITE_BG,BLUE_BG,WHITE_BG,BLUE_BG,WHITE_BG,BLUE_BG,WHITE_BG,BLUE_BG};
-		ej4.verticalSameColor(9, 1, 30, 3, coloresEspanya, false, RESET);
-		ej4.verticalSameColor(9, 1, 30, 3, coloresAlemania, false, RESET);
-		ej4.verticalSameColor(8, 1, 30, 2, coloresUcraina, false, RESET);
-		ej4.verticalSameColor(9, 1, 30, 9, coloresCatalunya, false, RESET);
-		ej4.verticalSameColor(9, 3, 10, 3, coloresFrancia, true, RESET);
-		ej4.verticalSameColor(9, 1, 30, 9, coloresGrecia, false, RESET);
+		BanderaInfo bandera=new BanderaInfo();
+
+		//String[] coloresEspanya= {RED_BG, YELLOW_BG, RED_BG};
+		//String[] coloresAlemania= {BLACK_BG, RED_BG, YELLOW_BG};
+		//String[] coloresUcraina= {BLUE_BG, YELLOW_BG};
+		//String[] coloresCatalunya= {YELLOW_BG, RED_BG,YELLOW_BG, RED_BG,YELLOW_BG, RED_BG,YELLOW_BG, RED_BG,YELLOW_BG};
+		//String[] coloresFrancia= {BLUE_BG,WHITE_BG,RED_BG};
+		//ej4.verticalSameColor(9, 1, 30, 3, coloresEspanya, false, RESET);
+		//ej4.verticalSameColor(9, 1, 30, 3, coloresAlemania, false, RESET);
+		//ej4.verticalSameColor(8, 1, 30, 2, coloresUcraina, false, RESET);
+		//ej4.verticalSameColor(9, 1, 30, 9, coloresCatalunya, false, RESET);
+		//ej4.verticalSameColor(9, 3, 10, 3, coloresFrancia, true, RESET);
+		//ej4.verticalSameColor(9, 1, 30, 9, coloresGrecia, false, RESET);
 		
-		ej4.hacerBandera();
+		//ej4.hacerBandera(UNDERLINED,BOLD,GREEN_TEXT,RESET);
+		//String text=ej4.changeFormat(BLUE_BG, RED_TEXT, ITALIC, "HELLOOWW");
+		//System.out.println(text);
+		//System.out.println(ej4.reseteFormat("LaVirgen"));
 		
+		//System.out.println(ej4.banderaArcoiris(backgroundColors, textColors, formatColors, frases, bandera));
+		
+		// ej2.ArbolDeNavidad(BLUE_BG, GREEN_BG, GREENLIGHT_BG, BROWN_BG, RED_BG);
+		//System.out.println(ej4.changeFormat(WHITE_BG, BLACK_TEXT, BOLD, "----------------------------------------------------------------------------"));
+		//System.out.println(ej4.changeFormat(BLUE_BG, YELLOW_TEXT, BOLD, "Rango byte    desde:                  -128    hasta:                     127"));
+		//System.out.println(ej4.changeFormat(BLACK_BG, WHITE_TEXT, BOLD, "----------------------------------------------------------------------------"));
+		//System.out.println(ej4.changeFormat(YELLOW_BG, BLUE_TEXT, ITALIC, "Rango short   desde:                -32768    hasta:                   32767"));
+		//System.out.println(ej4.changeFormat(BLACK_BG, WHITE_TEXT, BOLD, "----------------------------------------------------------------------------"));
+		//System.out.println(ej4.changeFormat(RED_BG, GREEN_TEXT, FAINT, "Rango int     desde:           -2147483648    hasta:              2147405042"));
+		//System.out.println(ej4.changeFormat(BLACK_BG, WHITE_TEXT, BOLD, "----------------------------------------------------------------------------"));
+		//System.out.println(ej4.changeFormat(GREEN_BG, RED_TEXT, BOLD, "Rango long    desde:  -9223372036854775808    hasta:     9223372036854775807"));
+		//System.out.println(ej4.changeFormat(BLACK_BG, WHITE_TEXT, BOLD, "----------------------------------------------------------------------------"));
+		//System.out.println(ej4.changeFormat(BLUE_BG, GREEN_TEXT, ITALIC, "Rango float   desde:               1.4E-45    hasta:                3.402823"));
+		//System.out.println(ej4.changeFormat(BLACK_BG, WHITE_TEXT, BOLD, "----------------------------------------------------------------------------"));		
+		//System.out.println(ej4.changeFormat(RED_BG, YELLOW_TEXT, FAINT, "Rango double  desde:              4.9E-324    hasta:  1.7976931348623157E308"));
+		//System.out.println(ej4.changeFormat(WHITE_BG, BLACK_TEXT, BOLD, "----------------------------------------------------------------------------"));
 
+		
+		/*Ejercicio de tipos de datos
+• ¿Puedes obtener la clase a la que pertenecen todas ellas? maneras de resolver esto:
+	- Castear para identificar a Wrapper debería de pertenecer
+	- Envolver el valor con un Whapper de alguna de las maneras para posteriormente acceder a su valor
+Ejercicio 2
+Haz un programa que en un función del tipo de dato que le pasemos por parámetros (String, int,
+Long, etc.) identifique a que Wapper pertenece o bien si es un tipo de dato primitivo a que Wrapper
+pertenecería cuando se realice la conversión (casteo) a Object. */
+		
+	/*	Long longuito=123212321321l;
+		byte bitito=3;
+		short shortitio=12;
+		Integer integuito=123;
+		Byte biti= Byte.valueOf(bitito);
+		Short shorti=Short.valueOf(shortitio);
+		
+		System.out.println(longuito.getClass().getSimpleName());
+		System.out.println(integuito.getClass().getSimpleName());
+		System.out.println(biti.getClass().getSimpleName());
+		System.out.println(shorti.getClass().getSimpleName());
+		System.out.println(((Object)bitito).getClass().getSimpleName());
+		System.out.println(((Object)shortitio).getClass().getSimpleName()); 
+		ej4.wrapers(bitito);
+		ej4.wrapers(longuito);*/
 
+		/* Ejercicio de conversiones
+			1. Declara un tipo de dato double y ves haciendo una escalera de conversiones dato
+			primitivo a dato primitivo hasta llegar a byte.
+			
+			double numero=1.444;
+			long longui=(long)numero;
+			int intiti=(int)longui;
+			short shorti=(short) intiti;
+			byte biti=(byte) shorti;
+			System.out.println(biti);
+		
+			2. Declara un tipo de dato byte y ves realizando conversiones ascendentes de dato
+			primitivo a dato primitivo hasta llegar a double.
+			
+			byte biti2=5;
+			short shorti2=(short) biti2;
+			int intiti2=(int)shorti2;
+			float flotador2=(float) intiti2;
+			double numero2=(double) flotador2;
+			System.out.println(numero2);
+		
+			3. Declara un tipo de dato byte e inicializa la variable a 100. Modifica el valor de la variable
+			multiplicando su valor x 2 ¿Qué está pasando? ¿Cómo lo arreglarías? 
+			
+			byte bit=100;
+			//bit=bit*2; //Obvio se pasa del rango. casetar a int
+			int num=bit*2;
+			System.out.println(num);*/
 	}
 
 
