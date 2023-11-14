@@ -1,5 +1,10 @@
 package Exercises;
+import java.awt.Color;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
+
+import HolaYAdios.HolaMundo;
 
 public class Program1 {
 
@@ -12,6 +17,8 @@ public class Program1 {
 		Navidad ej2=new Navidad();
 		EstructurasRepetitivas ej3=new EstructurasRepetitivas();
 		Banderas ej4=new Banderas();
+		Printf ej5 = new Printf();
+		Recursividad ej7 = new Recursividad();
 		
 	// HACER MENU EJERCICIOS:
 	//	ej1.secuenciasEscape();
@@ -162,6 +169,7 @@ public class Program1 {
 		
 		// System.out.println(ej3.isPar());
 		
+		/*
 		final String RESET="\033[0m";
 		final String RED_BG = "\033[48;5;160m";
 		final String RED_TEXT= "\033[38;5;160m";
@@ -200,6 +208,7 @@ public class Program1 {
 				"   El brillo de las estrellas "};
 
 		BanderaInfo bandera=new BanderaInfo();
+		*/
 
 		//String[] coloresEspanya= {RED_BG, YELLOW_BG, RED_BG};
 		//String[] coloresAlemania= {BLACK_BG, RED_BG, YELLOW_BG};
@@ -289,6 +298,47 @@ pertenecería cuando se realice la conversión (casteo) a Object. */
 			//bit=bit*2; //Obvio se pasa del rango. casetar a int
 			int num=bit*2;
 			System.out.println(num);*/
+		
+		// ej5.EjerciciosVariosf();
+		// ej5.ejTabla();
+		
+		/* Situándonos en Main, haz un import individual de HblaMundo ¿Qué esta pasando? ¿Funciona?
+		¿Qué pasa si intentamos llamar a HastaNunqui sin importar el fichero? Explica las dos
+		maneras distintas mediante a las cuales poderos solucionar esta.
+		
+		HolaMundo ej6 = new HolaMundo();
+		// Tengo que importar el package
+		
+		HolaYAdios.HastaNunqui ej6b=new HolaYAdios.HastaNunqui();
+		// O puedo instanciarlo todo dentro  */
+		
+		// String[] tecnologies = {"Markdown", "Regexp", "HTML", "CSS", "IS", "SQL", "Java"};
+		// ej7.recorrer(tecnologies, 0);
+		// ej7.recorrerConLimite(tecnologies, 0);
+		// List<Integer> miArrayList = new ArrayList<Integer>();
+		// ej7.fibonacci(miArrayList, 56, 0);
+		// for (Integer integer : miArrayList) {
+		// 	System.out.print(integer+" ");
+		// }
+		// System.out.println(ej7.inversion("supercalifragilisticoespialidoso", "", 0));
+		// System.out.println(ej7.sumaLikeFact(123456789, 0, 0));
+		
+		Car cotxe1= new Car();
+		Car cotxe2= new Car("C3","Citroen",Color.gray, 50);
+		Car cotxe3= new Car("1076","Peugeot",Color.blue, 100);
+		
+		System.out.println(cotxe1.getMarca());
+		System.out.println(cotxe2.getFuel());
+		System.out.println(cotxe3.getModel());
+		System.out.println(cotxe3.getColor());
+		cotxe2.setColor(Color.BLACK);
+		cotxe2.setFuel(60);
+		cotxe2.setMarca("Tesla");
+		cotxe2.setModel("123");
+		System.out.println(cotxe2.toString());
+		System.out.println(cotxe2.driveFuel());
+		
+
 	}
 
 
