@@ -323,6 +323,7 @@ pertenecería cuando se realice la conversión (casteo) a Object. */
 		// System.out.println(ej7.inversion("supercalifragilisticoespialidoso", "", 0));
 		// System.out.println(ej7.sumaLikeFact(123456789, 0, 0));
 		
+		/*
 		Car cotxe1= new Car();
 		Car cotxe2= new Car("C3","Citroen",Color.gray, 50);
 		Car cotxe3= new Car("1076","Peugeot",Color.blue, 100);
@@ -337,6 +338,10 @@ pertenecería cuando se realice la conversión (casteo) a Object. */
 		cotxe2.setModel("123");
 		System.out.println(cotxe2.toString());
 		System.out.println(cotxe2.driveFuel());
+		*/
+		
+		Card tarjeta1=new Card("111222333444", "Pepito Palotes", "1234");
+		tarjeta1.Menu();
 		
 
 	}
