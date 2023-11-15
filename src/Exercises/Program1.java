@@ -340,9 +340,26 @@ pertenecería cuando se realice la conversión (casteo) a Object. */
 		System.out.println(cotxe2.driveFuel());
 		*/
 		
-		Card tarjeta1=new Card("111222333444", "Pepito Palotes", "1234");
-		tarjeta1.Menu();
+		// Card tarjeta1=new Card("111222333444", "Pepito Palotes", "1234");
+		// tarjeta1.Menu();
 		
+		/*
+		Planta plantita=new Planta();
+		plantita.tipo="Plantita";
+		plantita.Alimentarse();
+		
+		Carnivoro carniv=new Carnivoro();
+		carniv.Alimentarse();
+		
+		Herbivoro herbi= new Herbivoro();
+		herbi.Alimentarse(); 
+		System.out.println(carniv.RespirarPorMinuto());
+		System.out.println(herbi.RespirarPorMinuto()); */
+		
+		TresEnRalla tresEnRalla= new TresEnRalla();
+		
+		tresEnRalla.Menu();
+
 
 	}
 
