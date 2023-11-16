@@ -356,9 +356,16 @@ pertenecería cuando se realice la conversión (casteo) a Object. */
 		System.out.println(carniv.RespirarPorMinuto());
 		System.out.println(herbi.RespirarPorMinuto()); */
 		
-		TresEnRalla tresEnRalla= new TresEnRalla();
+		// TresEnRalla tresEnRalla= new TresEnRalla();
+		//tresEnRalla.Menu();
 		
-		tresEnRalla.Menu();
+		Developer dev1=new Developer("David", "Virgen de los Santos", 28, "12345678A", Profesiones.BACK_END_DEVELOPER);
+		Developer dev2=new Developer("Jose", "Mota", 45, "87654321T", Profesiones.FRONT_END_DEVELOPER);
+		Developer dev3=new Developer("Agustin", "Magno", 36, "45546776B", Profesiones.FULL_STACK_DEVELOPER);
+
+		dev1.comprobando();
+		dev2.comprobando();
+		dev3.comprobando();
 
 
 	}
