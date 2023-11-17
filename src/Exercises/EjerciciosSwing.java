@@ -5,6 +5,7 @@ import javax.swing.JOptionPane;
 
 public class EjerciciosSwing {
 	public void panelOption() {
+		/*
 		JOptionPane.showMessageDialog(null, "Hola");
 		JOptionPane.showMessageDialog(null, "Que tal?", "Pregunta", 3);
 		JOptionPane.showMessageDialog(null, "Todo mal", "Respuesta", JOptionPane.ERROR_MESSAGE);
@@ -44,6 +45,26 @@ public class EjerciciosSwing {
 			default:
 				break;
 		}
+		*/
+		String [] animals= {"Gato","Perro","Lobo","Dinosaurio"};
+		Object result= JOptionPane.showInputDialog(null, "Que animal te gusta?", "Animal Quiz", 3, null, animals, "Lobo");
+		switch(result.toString()) {
+		case "Gato":
+			JOptionPane.showMessageDialog(null, "Que tal?");
+			break;
+		case "Perro":
+			JOptionPane.showMessageDialog(null, "Que tal?");
+			break;
+		case "Lobo":
+			JOptionPane.showMessageDialog(null, "Que tal?");
+			break;
+		case "Dinosaurio":
+			JOptionPane.showMessageDialog(null, "Que tal?");
+			break;
+		default:
+			break;
+	}
+		System.out.println(result);
 				
 	}
 }
