@@ -183,7 +183,7 @@ public class Card {
                     System.exit(0);
 					break;
 				default:
-					throw new IllegalArgumentException("\033[31m Unexpected value: " + numero+"\033[0m");
+					throw new IllegalArgumentException("\033[31m Unexpected value: " + opcion+"\033[0m");
 				}
 	
 	        } while (opcion != 13);
