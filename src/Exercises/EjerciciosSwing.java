@@ -1,9 +1,9 @@
 package Exercises;
 
-import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
-public class EjerciciosSwing {
+public class EjerciciosSwing{
 	public void panelOption() {
 		/*
 		JOptionPane.showMessageDialog(null, "Hola");
@@ -48,18 +48,23 @@ public class EjerciciosSwing {
 		*/
 		String [] animals= {"Gato","Perro","Lobo","Dinosaurio"};
 		Object result= JOptionPane.showInputDialog(null, "Que animal te gusta?", "Animal Quiz", 3, null, animals, "Lobo");
+		ImageIcon icon1=new ImageIcon(getClass().getResource("../media/gato.png"));
+		ImageIcon icon2=new ImageIcon("../media/perro.png");
+		ImageIcon icon3=new ImageIcon("../media/lobo.png");
+		ImageIcon icon4=new ImageIcon("../media/dino.png");
+		
 		switch(result.toString()) {
 		case "Gato":
-			JOptionPane.showMessageDialog(null, "Que tal?");
+			JOptionPane.showMessageDialog(null, icon1);
 			break;
 		case "Perro":
-			JOptionPane.showMessageDialog(null, "Que tal?");
+			JOptionPane.showMessageDialog(null, icon2);
 			break;
 		case "Lobo":
-			JOptionPane.showMessageDialog(null, "Que tal?");
+			JOptionPane.showMessageDialog(null, icon3);
 			break;
 		case "Dinosaurio":
-			JOptionPane.showMessageDialog(null, "Que tal?");
+			JOptionPane.showMessageDialog(null, icon4);
 			break;
 		default:
 			break;
