@@ -51,10 +51,10 @@ public class EjerciciosSwing{
 		String [] animals= {"Gato","Perro","Lobo","Dinosaurio"};
 		System.out.println("Working Directory = " + System.getProperty("user.dir"));
 		Object result= JOptionPane.showInputDialog(null, "Que animal te gusta?", "Animal Quiz", 3, null, animals, "Lobo");
-		Icon icon1 = new ImageIcon(EjerciciosSwing.class.getResource("media/gato.png"));
-		Icon icon2 = new ImageIcon(EjerciciosSwing.class.getResource("media/perro.png"));
-		Icon icon3 = new ImageIcon(EjerciciosSwing.class.getResource("media/lobo.png"));
-		Icon icon4 = new ImageIcon(EjerciciosSwing.class.getResource("media/dino.png"));
+		Icon icon1 = new ImageIcon(getClass().getResource("media/gato.png"));
+		Icon icon2 = new ImageIcon(getClass().getResource("media/perro.png"));
+		Icon icon3 = new ImageIcon(getClass().getResource("media/lobo.png"));
+		Icon icon4 = new ImageIcon(getClass().getResource("media/dino.png"));
 
         // Mostrar un JOptionPane con la imagen
 		switch(result.toString()) {
