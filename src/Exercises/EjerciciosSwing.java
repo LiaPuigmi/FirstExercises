@@ -1,6 +1,8 @@
 package Exercises;
 
 import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.Icon;
 import javax.swing.JOptionPane;
 
 public class EjerciciosSwing{
@@ -47,24 +49,26 @@ public class EjerciciosSwing{
 		}
 		*/
 		String [] animals= {"Gato","Perro","Lobo","Dinosaurio"};
+		System.out.println("Working Directory = " + System.getProperty("user.dir"));
 		Object result= JOptionPane.showInputDialog(null, "Que animal te gusta?", "Animal Quiz", 3, null, animals, "Lobo");
-		ImageIcon icon1=new ImageIcon(getClass().getResource("../media/gato.png"));
-		ImageIcon icon2=new ImageIcon("../media/perro.png");
-		ImageIcon icon3=new ImageIcon("../media/lobo.png");
-		ImageIcon icon4=new ImageIcon("../media/dino.png");
-		
+		Icon icon1 = new ImageIcon(EjerciciosSwing.class.getResource("media/gato.png"));
+		Icon icon2 = new ImageIcon(EjerciciosSwing.class.getResource("media/perro.png"));
+		Icon icon3 = new ImageIcon(EjerciciosSwing.class.getResource("media/lobo.png"));
+		Icon icon4 = new ImageIcon(EjerciciosSwing.class.getResource("media/dino.png"));
+
+        // Mostrar un JOptionPane con la imagen
 		switch(result.toString()) {
 		case "Gato":
-			JOptionPane.showMessageDialog(null, icon1);
+	        JOptionPane.showMessageDialog(null, "Un gato bonito",  "", JOptionPane.INFORMATION_MESSAGE, icon1);
 			break;
 		case "Perro":
-			JOptionPane.showMessageDialog(null, icon2);
+	        JOptionPane.showMessageDialog(null, "Un perro bonito",  "", JOptionPane.INFORMATION_MESSAGE, icon2);
 			break;
 		case "Lobo":
-			JOptionPane.showMessageDialog(null, icon3);
+	        JOptionPane.showMessageDialog(null, "Un lobo bonito",  "", JOptionPane.INFORMATION_MESSAGE, icon3);
 			break;
 		case "Dinosaurio":
-			JOptionPane.showMessageDialog(null, icon4);
+	        JOptionPane.showMessageDialog(null,"Un dino bonito",  "", JOptionPane.INFORMATION_MESSAGE, icon4);
 			break;
 		default:
 			break;
