@@ -15,7 +15,7 @@ public class MyJFrame extends JFrame{
 		setVisible(visible);
 		setResizable(resizable);
 		getContentPane().setBackground(color);
-		setIconImage(Toolkit.getDefaultToolkit().getImage("./src/imagenes/favicon.png"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage("src/imagenes/favicon.ico"));
 		setTitle("Fundacio Esplai");
 		
 	}
