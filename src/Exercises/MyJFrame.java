@@ -1,8 +1,10 @@
 package Exercises;
 
 import java.awt.Color;
+import java.awt.Image;
 import java.awt.Toolkit;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
 public class MyJFrame extends JFrame{
@@ -13,7 +15,7 @@ public class MyJFrame extends JFrame{
 		setVisible(visible);
 		setResizable(resizable);
 		getContentPane().setBackground(color);
-		setIconImage(Toolkit.getDefaultToolkit().getImage("src/imagenes/favicon.ico"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage("./src/imagenes/favicon.png"));
 		setTitle("Fundacio Esplai");
 		
 	}
