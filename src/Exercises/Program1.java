@@ -1,8 +1,17 @@
 package Exercises;
+import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.FlowLayout;
+import java.awt.GridLayout;
+import java.awt.Image;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+
+import javax.imageio.ImageIO;
+import javax.swing.JButton;
+import javax.swing.JOptionPane;
 
 import HolaYAdios.HolaMundo;
 
@@ -375,8 +384,127 @@ pertenecería cuando se realice la conversión (casteo) a Object. */
 		// es.panelOption();
 		// es.preguntas();
 
-		MyJFrame mj= new MyJFrame(800, 600, true, false, Color.LIGHT_GRAY);
-
+		/*
+		Image icon = null;
+		try {
+		     icon = ImageIO.read(Program1.class.getResource("../imagenes/favicon.png"));
+		} catch (IOException e) {
+		    e.printStackTrace();
+		}finally {
+			MyJFrame mj= new MyJFrame(800, 600, true, false, Color.BLUE, icon);
+			mj.lalala();
+		}
+		*/
+		/*
+		MyJFrame mj2=new MyJFrame();
+		mj2.setVisible(true);
+		mj2.setBounds(250,250,600,600);
+		JButton btn1= new JButton("Hide North Border");
+		mj2.add(btn1, BorderLayout.NORTH);
+		JButton btn2= new JButton("Hide West Border");
+		mj2.add(btn2, BorderLayout.WEST);
+		JButton btn3= new JButton("Hide Center Border");
+		mj2.add(btn3, BorderLayout.CENTER);
+		JButton btn4= new JButton("Hide East Border");
+		mj2.add(btn4, BorderLayout.EAST);
+		JButton btn5= new JButton("Hide South Border");
+		mj2.add(btn5, BorderLayout.SOUTH);
+		btn1.addActionListener(e->{
+			JOptionPane.showMessageDialog(null,"Boton Norte: "+ btn1.getLocation());
+		});
+		
+		btn2.addActionListener(e->{
+			JOptionPane.showMessageDialog(null,"Boton Oeste: "+ btn2.getLocation());
+		});
+		
+		btn3.addActionListener(e->{
+			JOptionPane.showMessageDialog(null,"Boton Centro: "+ btn3.getLocation());
+		});
+		
+		btn4.addActionListener(e->{
+			JOptionPane.showMessageDialog(null,"Boton Este: "+ btn4.getLocation());
+		});
+		
+		btn5.addActionListener(e->{
+			JOptionPane.showMessageDialog(null,"Boton Sur: "+ btn5.getLocation());
+		});
+		
+		
+		MyJFrame mj3=new MyJFrame();
+		mj3.setVisible(true);
+		mj3.setBounds(250,250,600,600);
+		mj3.setLayout(new FlowLayout(FlowLayout.LEFT) );
+		mj3.setLayout(new FlowLayout(FlowLayout.RIGHT) );
+		mj3.setLayout(new FlowLayout(FlowLayout.CENTER) );
+		JButton btn1= new JButton("Hide North Border");
+		mj3.add(btn1);
+		JButton btn2= new JButton("Hide West Border");
+		mj3.add(btn2);
+		JButton btn3= new JButton("Hide Center Border");
+		mj3.add(btn3);
+		JButton btn4= new JButton("Hide East Border");
+		mj3.add(btn4);
+		JButton btn5= new JButton("Hide South Border");
+		mj3.add(btn5);
+		*/
+		
+		MyJFrame mj3=new MyJFrame();
+		mj3.setVisible(true);
+		mj3.setBounds(250,250,600,600);
+		mj3.setLayout(new GridLayout(3,3));
+		JButton btn1= new JButton("Btn1");
+		mj3.add(btn1);
+		JButton btn2= new JButton("Btn2");
+		mj3.add(btn2);
+		JButton btn3= new JButton("Btn3");
+		mj3.add(btn3);
+		JButton btn4= new JButton("Btn4");
+		mj3.add(btn4);
+		JButton btn5= new JButton("Btn5");
+		mj3.add(btn5);
+		JButton btn6= new JButton("Btn6");
+		mj3.add(btn6);
+		JButton btn7= new JButton("Btn7");
+		mj3.add(btn7);
+		JButton btn8= new JButton("Btn8");
+		mj3.add(btn8);
+		JButton btn9= new JButton("Btn9");
+		mj3.add(btn9);
+		
+		btn1.addActionListener(e->{
+			JOptionPane.showMessageDialog(null,"Boton 1: "+ btn1.getLocation());
+		});
+		
+		btn2.addActionListener(e->{
+			JOptionPane.showMessageDialog(null,"Boton 2: "+ btn2.getLocation());
+		});
+		
+		btn3.addActionListener(e->{
+			JOptionPane.showMessageDialog(null,"Boton 3: "+ btn3.getLocation());
+		});
+		
+		btn4.addActionListener(e->{
+			JOptionPane.showMessageDialog(null,"Boton 4: "+ btn4.getLocation());
+		});
+		
+		btn5.addActionListener(e->{
+			JOptionPane.showMessageDialog(null,"Boton 5: "+ btn5.getLocation());
+		});
+		btn6.addActionListener(e->{
+			JOptionPane.showMessageDialog(null,"Boton 6: "+ btn6.getLocation());
+		});
+		
+		btn7.addActionListener(e->{
+			JOptionPane.showMessageDialog(null,"Boton 7: "+ btn7.getLocation());
+		});
+		
+		btn8.addActionListener(e->{
+			JOptionPane.showMessageDialog(null,"Boton 8: "+ btn8.getLocation());
+		});
+		
+		btn9.addActionListener(e->{
+			JOptionPane.showMessageDialog(null,"Boton 9: "+ btn9.getLocation());
+		});
 	}
 
 
