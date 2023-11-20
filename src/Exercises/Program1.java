@@ -371,9 +371,11 @@ pertenecería cuando se realice la conversión (casteo) a Object. */
 		// JDBC bbdd= new JDBC();
 		// bbdd.conecxion();
 		
-		EjerciciosSwing es =new EjerciciosSwing();
-		es.panelOption();
+		// EjerciciosSwing es =new EjerciciosSwing();
+		// es.panelOption();
+		// es.preguntas();
 
+		MyJFrame mj= new MyJFrame(800, 600, true, false, Color.LIGHT_GRAY);
 
 	}
 
